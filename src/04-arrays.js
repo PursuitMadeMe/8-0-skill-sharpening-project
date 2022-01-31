@@ -30,7 +30,8 @@ function createEmptyArray() {
  *  //> [ true, false ]
  */
 function createArrayWithTwoElements(a, b) {}
-    elementsArr= 
+    elementsArr= [];
+    
 /**
  * getArrayLength()
  * ---------------------

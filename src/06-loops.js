@@ -12,11 +12,12 @@
  *  (3 + 4 + 5 + 6 + 7 = 25)
  */
 function rangeSum(min, max) {
-  let number = 0;
-  for (let min = 1; min < max.length; min++){
-    number += max[min];
-    return number;
+  let sum = 0;
+  for (let i = min; i <= max; i++){ 
+    sum += i;
+    
   }
+  return sum;
 }
 
 
@@ -33,7 +34,15 @@ function rangeSum(min, max) {
  *  rangeOdd(10, 15);
  *  //> [ 15, 13, 11 ]
  */
-function rangeOdd(min, max) {}
+function rangeOdd(min, max) {
+  let oddArr = [];
+  for (let i = max; i >= min; i--)
+  if (i % 2  !== 0) {
+    oddArr.push(i);
+  }
+  return oddArr;
+  
+}
 
 /**
  * rangeEveryOther()
@@ -47,9 +56,17 @@ function rangeOdd(min, max) {}
  *  rangeEveryOther(11, 18);
  *  //> [ 11, 13, 15, 17 ]
  */
-function rangeEveryOther(min, max) {}
+function rangeEveryOther(min, max) {
 
-/**
+  let otherArr = [];
+  for (let i = min; i <=max; i+= 2)
+  otherArr.push(i)
+  return otherArr
+}
+
+
+
+  /**
  * containsWhileLoop()
  * ---------------------
  * Returns whether or not the `target` value exists in the array.
@@ -69,7 +86,13 @@ function rangeEveryOther(min, max) {}
  *  containsWhileLoop([ "left", "up", "right" ], "down");
  *  //> false
  */
-function containsWhileLoop(array, target) {}
+function containsWhileLoop(array, target) {
+  let i = 0;
+  while (i <= array.length){
+    if (i = target)
+    return true;
+  }
+}
 
 /**
  * containsForLoop()
@@ -91,7 +114,14 @@ function containsWhileLoop(array, target) {}
  *  containsForLoop([ "left", "up", "right" ], "down");
  *  //> false
  */
-function containsForLoop(array, target) {}
+function containsForLoop(array, target) {
+  for (let i = 0; i <= array.length; i++)
+  if(i = target){
+    return true;
+  }else{
+    return false;
+  }
+}
 
 /**
  * targetCount()
@@ -105,7 +135,13 @@ function containsForLoop(array, target) {}
  *  targetCount([ 10, 20, 10, 20, 30 ], 10);
  *  //> 2
  */
-function targetCount(array, target) {}
+function targetCount(array, target) {
+  let count = 0;
+  for (let i = 0; i <= array.length; i++){
+    if (array[i] = target){count++}
+  }
+    return count;
+}
 
 /**
  * firstIndexFound()

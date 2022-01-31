@@ -3,7 +3,7 @@ const {
   greet,
   add,
   multiply,
-  average,
+  average,`
   averageThree,
   compareTypes,
   flipSign,

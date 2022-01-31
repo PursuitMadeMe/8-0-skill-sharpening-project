@@ -10,7 +10,7 @@
  * EXAMPLE:
  *  isEqual(10, 10);
  *  //> true
- *
+ *npm test
  *  isEqual(10, "10");
  *  //> false
  */
@@ -62,7 +62,7 @@ function findLargerOrTie(a, b) {
  }else{ (a === b) 
    return "tie";
  }
-
+}
     
 
 /**

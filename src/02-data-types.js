@@ -156,12 +156,14 @@ function isOdd(num) {
  *  //> false
  */
 function isTruthy(val) {
-  if (val === true){
+  if (val === true){ 
     return true;
   }else if (val !== true){
     return false;
   }
 }
+
+
 
 /**
  * isFalsy()

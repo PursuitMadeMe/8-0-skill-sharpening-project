@@ -41,9 +41,14 @@ function createObjectWithValue(val) {
  *  //> { left: false }
  */
 function createObjectWithKey(key) {
-  let newObject = (key);
+  let newObject = {};
+  newObject[key] = false;
+  newObject["lock"] = true;
+  console.log(newObject);
+  console.log("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
   return newObject;
 }
+
 
 /**
  * createObjectWithKeyValuePair()
@@ -58,7 +63,8 @@ function createObjectWithKey(key) {
  *  //> { left: "right" }
  */
 function createObjectWithKeyValuePair(key, val) {
-  let newObject = {key: val};
+  let newObject = {};
+  newObject[key] = val;
   return newObject;
 }
 
@@ -105,7 +111,8 @@ function getAgeFromObject(object) {
  *  //> { left: true, key: false }
  */
 function addValueToObject(object, val) {
-   object.val = "";
+   object = {key1: val};
+   
    return object;
 }
 
@@ -119,9 +126,15 @@ function addValueToObject(object, val) {
  *
  * EXAMPLE:
  *  addKeyToObject({ right: false }, "left");
- *  //> { right: false, left: true }
+ *  //> { right: false, left: true } 
  */
-function addKeyToObject(object, key) {}
+function addKeyToObject(object, key) {
+  object[key] = "";
+   
+   return object;
+}
+
+
 
 /**
  * addKeyValuePairToObject()
@@ -136,7 +149,10 @@ function addKeyToObject(object, key) {}
  *  addKeyValuePairToObject({ up: true }, "left", false);
  *  //> { up: true, left: false }
  */
-function addKeyValuePairToObject(object, key, val) {}
+function addKeyValuePairToObject(object, key, val) {
+  object[key] = val;
+  return object;
+}
 
 /**
  * deleteKeyFromObject()
@@ -150,7 +166,10 @@ function addKeyValuePairToObject(object, key, val) {}
  *  deleteKeyFromObject({ left: true, right: false }, "left");
  *  //> { right: false }
  */
-function deleteKeyFromObject(object, key) {}
+function deleteKeyFromObject(object, key) {
+  delete object[key];
+  return object;
+}
 
 // Do not change any code below this line.
 module.exports = {
