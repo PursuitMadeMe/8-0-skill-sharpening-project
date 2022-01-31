@@ -183,10 +183,11 @@ function flipSign(a) {
  *  joinStringsWithSpaces("left", "right", "up", "down", "away");
  *  //> "left right up down away"
  */
-function joinStringsWithSpaces(a,b,c,d,e) {
-  let string = a + " " + b + " " + c + " " + d + " " + e
+function joinStringsWithSpaces(a,b,c,d,e) { 
+let string = a + " " + b + " " + c + " " + d + " " + e
   return string;
 }
+
 
 /**
  * getFirstAndLastCharacter()

@@ -29,9 +29,12 @@ function createEmptyArray() {
  *  createArrayWithTwoElements(true, false);
  *  //> [ true, false ]
  */
-function createArrayWithTwoElements(a, b) {}
-    elementsArr= [];
+function createArrayWithTwoElements(a, b) {
+  elementsArr = [a, b];
+    return elementsArr;
+}
     
+
 /**
  * getArrayLength()
  * ---------------------
@@ -76,8 +79,8 @@ function getFirstElementOfArray(array) {
  *  //> undefined
  */
 function getLastElementOfArray(array) {
-  let lastElement = array.length -1;
-  return lastElement;
+  
+  return array[array.length -1];
 }
 
 /**
@@ -109,8 +112,8 @@ function addElementToEndOfArray(array, element) {
  *  //> 8
  */
 function removeElementFromEndOfArray(array) {
-    array.pop();
-    return array;
+    let newArray = array.pop();
+    return newArray;
 }
 
 /**
@@ -143,8 +146,10 @@ function addElementToFrontOfArray(array, element) {
  *  //> 10
  */
 function removeElementFromFrontOfArray(array) {
-  array.shift();
-  return array;
+  //console.log(array);
+  let firstElement = array.shift();
+  //console.log(array);
+    return firstElement;
 }
 
 /**

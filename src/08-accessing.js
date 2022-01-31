@@ -148,7 +148,7 @@ function getFullName(person) {
  *  //> "Staten Island, NY"
  */
 function getCityAndState(person) {
-  let objStr = Object.values(person.address.city.state).join(" , ");
+  let objStr = Object.values(person.address[city.state]).join(" , ");
   return objStr;
 }
 
@@ -192,7 +192,13 @@ function getFullAddress(person) {
       numbers: [7185550921, 7185558611],
     };
  */
-function getFlatObject(person) {}
+function getFlatObject(person) {
+  let newPerson = Object.assign({}, person);
+  newPerson.names = Object.assign({}, person.names);
+  newPerson.address = Object.assign({}, person.address);
+
+  return newPerson;
+}
 
 // Do not change the code below.
 module.exports = {

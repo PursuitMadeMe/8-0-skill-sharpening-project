@@ -113,7 +113,19 @@ function positiveNegativeOrZero(a) {
  *  aroundTheWorldGreeting();
  *  //> "Hello World"
  */
-function aroundTheWorldGreeting(language) {}
+function aroundTheWorldGreeting(language) {
+  if (language === "english"){
+    return "Hello World";
+  }else if (language === "spanish"){
+    return "Hola Mundo";
+  }else if (language === "german"){
+    return "Hallo Welt";
+  }else{
+    return "Hello World";
+  }
+
+  }
+
 
 /**
  * aroundTheWorldGreetingWithSwitch()
@@ -138,13 +150,13 @@ function aroundTheWorldGreeting(language) {}
  */
 function aroundTheWorldGreetingWithSwitch(language) {
   switch (language){
-    case English:
+    case "english":
       return "Hello World";
       break;
-    case Spanish:
+    case "spanish":
       return "Hola Mundo";
       break;
-    case German:
+    case "german":
       return "Hallo Welt";
       break;
       default:
@@ -205,9 +217,12 @@ function calculateLetterGrade(grade) {
  */
 function animalCounts(animal, numberOfAnimals) {
   if (numberOfAnimals = 1){
-  return "animal";
-  } else (numberOfAnimals >1) 
-    return "animals" + "s";
+    return (`${numberOfAnimals} ${animal}`);
+  } else if (numerOfAnimals > 2)
+    return (`${numberOfAnimals}  ${animal}s `);
+  {
+
+  }
   }
   
 
@@ -227,7 +242,14 @@ function animalCounts(animal, numberOfAnimals) {
  *  evenOrOdd(48);
  *  //> "Even"
  */
-function evenOrOdd(a) {}
+function evenOrOdd(a) {
+  if (a % 2 === 0){
+    return "Even";
+  }else{
+    return "Odd";
+  }
+
+}
 
 /**
  * evenOrOddWithTernary()
@@ -243,7 +265,9 @@ function evenOrOdd(a) {}
  *  evenOrOddWithTernary(8);
  *  //> "Even"
  */
-function evenOrOddWithTernary(a) {}
+function evenOrOddWithTernary(a) {
+  return (a % 2 === 0 ? "Even" : "Odd");
+}
 
 // Do not change any code below this line.
 module.exports = {
