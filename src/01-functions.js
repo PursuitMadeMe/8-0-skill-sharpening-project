@@ -44,9 +44,11 @@ function greet(name) {
  *  //> 30
  */
 function add(a,b) {
-  let sum = a + b
-  return sum;
+  return a + b;
 }
+  //let sum = a + b
+  //return sum;
+//}
 
 /**
  * multiply()
@@ -62,8 +64,8 @@ function add(a,b) {
  *  //> 10
  */
 function multiply(a,b) {
-  let product = a * b
-  return product;
+  return a * b;
+  
 }
 
 /**
@@ -85,8 +87,7 @@ function multiply(a,b) {
  *  //> 8 // 10 + 6 = 16; 16/2 = 8;
  */
 function average(a,b) {
-  let average = (a + b) / 2
-  return average;
+    return (a + b) / 2
 }
 
 /**
@@ -107,8 +108,7 @@ function average(a,b) {
  *  //> 10 // 10 + 11 + 19 = 30; 30 / 3 = 10;
  */
 function averageThree(a,b,c) {
-  let average = (a + b + c) / 3
-  return average;
+    return  (a + b + c) / 3
 }
 
 /**
@@ -129,11 +129,13 @@ function averageThree(a,b,c) {
  *  //> false
  */
 function compareTypes(a,b) {
-  if (typeof a === typeof  b){
-    return true;
-  } else {
-    return false;
-  }
+return typeof a === typeof b;
+
+  //if (typeof a === typeof  b){
+    //return true;
+  //} else {
+    //return false;
+  //}
 }
 
 /**
@@ -154,13 +156,15 @@ function compareTypes(a,b) {
  *  //> -50
  */
 function flipSign(a) {
-  if (a *= -1){
-    return a;
+    return a * -1
 
-  }else{
-  return a *= -1
+  //if (a *= -1){
+    //return a;
+
+  //}else{
+  //return a *= -1
     
-  }
+  //}
 }
 
   
@@ -184,8 +188,8 @@ function flipSign(a) {
  *  //> "left right up down away"
  */
 function joinStringsWithSpaces(a,b,c,d,e) { 
-let string = a + " " + b + " " + c + " " + d + " " + e
-  return string;
+      return `${a} ${b} ${c} ${d} ${e}`
+  
 }
 
 
@@ -204,11 +208,12 @@ let string = a + " " + b + " " + c + " " + d + " " + e
  *  getFirstAndLastCharacter("upwards");
  *  //> "us"
  */
-function getFirstAndLastCharacter(a) {
-  let first = a.charAt(0);
-  let last = a.charAt(a.lenth - 1);
+function getFirstAndLastCharacter(a) { 
+  return a[0] + a[a.length -1]
+  //let first = a.charAt(0);
+  //let last = a.charAt(a.lenth - 1);
 
-  return (`${first} ${last}`);
+  //return (`${first} ${last}`);
 }
 
 // Do not change the code below.

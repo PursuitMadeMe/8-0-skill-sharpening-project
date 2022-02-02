@@ -113,15 +113,14 @@ function positiveNegativeOrZero(a) {
  *  aroundTheWorldGreeting();
  *  //> "Hello World"
  */
-function aroundTheWorldGreeting(language) {
+function aroundTheWorldGreeting(language="english") {
   if (language === "english"){
     return "Hello World";
   }else if (language === "spanish"){
     return "Hola Mundo";
   }else if (language === "german"){
     return "Hallo Welt";
-  }else{
-    return "Hello World";
+  
   }
 
   }
@@ -216,10 +215,10 @@ function calculateLetterGrade(grade) {
  *  //> "1 pig"
  */
 function animalCounts(animal, numberOfAnimals) {
-  if (numberOfAnimals = 1){
+  if (numberOfAnimals <= 1){
     return (`${numberOfAnimals} ${animal}`);
-  } else if (numerOfAnimals > 2)
-    return (`${numberOfAnimals}  ${animal}s `);
+  } else 
+    return (`${numberOfAnimals} ${animal}s`);
   {
 
   }

@@ -61,9 +61,8 @@ function rangeEveryOther(min, max) {
   let otherArr = [];
   for (let i = min; i <=max; i+= 2)
   otherArr.push(i)
-  return otherArr
 }
-
+return otherArr
 
 
   /**
@@ -89,10 +88,13 @@ function rangeEveryOther(min, max) {
 function containsWhileLoop(array, target) {
   let i = 0;
   while (i <= array.length){
-    if (i = target)
+    if (array[i] = target)
     return true;
+     };
+     i++;
   }
-}
+  return false;
+
 
 /**
  * containsForLoop()
@@ -161,7 +163,11 @@ function targetCount(array, target) {
  *  firstIndexFound([ "left", "right", "left" ], "up");
  *  //> -1
  */
-function firstIndexFound(array, target) {}
+function firstIndexFound(array, target) {
+    for(let i = 0; i < array.length; i++)
+      if (array)
+  return -1;
+}
 
 /**
  * lastIndexFound()

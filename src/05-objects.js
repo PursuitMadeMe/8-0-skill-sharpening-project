@@ -10,8 +10,8 @@
  *  //> {}
  */
 function createEmptyObject() {
-  let emptyObj = {};
-  return emptyObj;
+      return  {};
+  
 }
 
 /**
@@ -26,7 +26,7 @@ function createEmptyObject() {
  *  //> { whateverKey: 19 }
  */
 function createObjectWithValue(val) {
-  let newObject = {val: val};
+     return {val: val};
   return newObject;
 }
 /**
